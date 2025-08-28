@@ -23,6 +23,7 @@ application {
     mainModule = "howdy"
 }
 
+// Modification of the run task
 tasks.named('run', JavaExec) {
     standardInput = System.in
 }
