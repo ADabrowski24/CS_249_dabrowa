@@ -1,6 +1,6 @@
 # CS 249 (Object-Oriented Programming)
 ***Fall 2025***  
-***Author: Your Name Here***  
+***Author: Adam Dabrowski***  
 ***Original author: Dr. Michael J. Reale***  
 ***SUNY Polytechnic Institute***
 
