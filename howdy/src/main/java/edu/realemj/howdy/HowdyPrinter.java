@@ -13,6 +13,7 @@ public class HowdyPrinter {
         System.out.println("*********************");
         System.out.println("Why are you still here?");
         System.out.println("GO HOME");
+        System.out.println("...");
 
     }
 
