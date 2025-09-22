@@ -1,3 +1,4 @@
-module assign02mod {    
-    exports edu.realemj.assign02;      
+module assign02mod {
+    requires java.desktop;
+    exports edu.dabrowa.assign02;
 }
