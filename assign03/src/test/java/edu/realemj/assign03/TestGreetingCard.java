@@ -1,4 +1,4 @@
-package edu.realemj.assign03;
+package edu.dabrowa.assign03;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
