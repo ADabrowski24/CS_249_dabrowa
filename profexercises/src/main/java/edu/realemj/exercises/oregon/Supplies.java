@@ -87,8 +87,24 @@ public class Supplies {
         return success;
     }
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("** SUPPLIES ************\n");
 
+        sb.append("* FOOD: ");
+        sb.append(totalFood);
+        sb.append("\n");
 
+        sb.append("* BULLETS: ");
+        sb.append(totalBullets);
+        sb.append("\n");
 
+        sb.append("* AXLES: ");
+        sb.append(totalAxles);
+        sb.append("\n");
 
+        sb.append("************************\n");
+
+        return sb.toString();
+    }
 }
