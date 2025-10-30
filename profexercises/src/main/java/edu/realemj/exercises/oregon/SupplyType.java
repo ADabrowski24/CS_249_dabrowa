@@ -32,6 +32,7 @@ public enum SupplyType {
                 break;
             }
         }
+
         return chosenType;
     }
 }

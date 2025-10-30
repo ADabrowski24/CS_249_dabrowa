@@ -11,7 +11,7 @@ public class Wasteland {
         System.out.println("Bob: " + bob.getHealth());
         System.out.println("Sue: " + sue.getHealth());
 
-        bob.setHealth(-9001);
+        bob.setHealth(78);
 
         System.out.println("Bob: " + bob.getHealth());
         System.out.println("Sue: " + sue.getHealth());

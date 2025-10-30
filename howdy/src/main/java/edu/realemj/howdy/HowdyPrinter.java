@@ -15,10 +15,18 @@ public class HowdyPrinter {
         System.out.println("GO HOME");
         System.out.println("...");
 
+        double [][][] voxel = {
+                {{0,0,0}},
+                {},
+                {}
+        };
+
+        System.out.println(voxel[1].length);
+
     }
 
     public static String getPassword() {
 
-        return "123456";
+        return "13345\n67790";
     }
 }

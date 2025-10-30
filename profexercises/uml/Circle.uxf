@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>17</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>136</x>
+      <y>187</y>
+      <w>425</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>Circle
+--
+-radius:double
+-pos:Matrix
+--
++Circle()
++Circle(r:double)
++Circle(r:double, p:Matrix)
++getRadius():double
++setRadius(radius:double):void
+_+checkValidRadius(r:double):boolean_</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

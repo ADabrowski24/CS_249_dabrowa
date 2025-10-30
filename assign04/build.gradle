@@ -1,14 +1,15 @@
-plugins {   
+plugins {
     id 'application'
 }
 
 version = '1.0'
 
-repositories {  
-    mavenCentral()    
+repositories {
+    mavenCentral()
 }
 
 dependencies {
+    testImplementation(testFixtures(project(":coretest")))
     testImplementation 'org.testng:testng:7.11.0'
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.13'
 }
@@ -18,8 +19,8 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises.inheritance.SuperShapeLand"
-    mainModule = "profexercisesmod"
+    mainClass = "edu.realemj.assign04.DraftingTable"
+    mainModule = "assign04mod"
 }
 
 tasks.named('run', JavaExec) {

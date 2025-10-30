@@ -8,7 +8,7 @@ public class HowdyTester {
     @Test()
     public void testGetPassword() {
         String p = HowdyPrinter.getPassword();
-        Assert.assertEquals(p, "12345", "Incorrect password!");
+        Assert.assertEquals(p, "12345\n67890", "Incorrect password!");
     }
 
     @Test()

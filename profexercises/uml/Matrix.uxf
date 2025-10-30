@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>18</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>108</y>
+      <w>630</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>Matrix
+--
+-m:double[][]
+--
++Matrix(other:Matrix)
++Matrix(data:double[][])
++Matrix(rowCnt:int, colCnt:int)
++toString():String
+_+make2DPoint(x:double, y:double):Matrix_
+_+make3DPoint(x:double, y:double, z:double):Matrix_
+_+make2DTranslate(xoff:double, yoff:double):Matrix_
++multiply(other:Matrix):Matrix
++toPointString():String
++getRowCnt():int
++getColCnt():int
++isInBounds(row:int, col:int):boolean
++get(row:int, col:int):double
++set(row:int, col:int, val:double):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
