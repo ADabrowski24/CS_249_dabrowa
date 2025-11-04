@@ -4,7 +4,7 @@ public class GreetingCard {
 
     private char bChar;
     private String[] message;
-    final int cardLen=50;
+    private final int cardLen=50;
 
     public  GreetingCard(String [] lines, char boundaryChar) {
         bChar=boundaryChar;
