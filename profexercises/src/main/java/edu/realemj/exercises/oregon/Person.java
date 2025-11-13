@@ -32,4 +32,17 @@ public class Person {
         return s;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        boolean isSame = false;
+        if(obj instanceof Person pother) {
+            // NOTE: NOT comparing alive status
+            if(name.equals(pother.name)) {
+                isSame = true;
+            }
+        }
+
+        return isSame;
+    }
+
 }

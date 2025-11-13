@@ -14,10 +14,27 @@ public class OregonTrail {
 
         int daysOnTrail = 0;
 
+        String [] randos = {
+                "Bob", "Joe", "Susy", "SmittyWerbenJaegerManJensen"
+        };
+
         while(!isGameOver(party, supplies)) {
             if(supplies.getTotalFood() <= 0) {
                 // Uh-oh
                 party.killRandomPerson();
+            }
+
+            if(Math.random() > 0.5) {
+                int randoIndex = (int)(Math.random()*randos.length);
+                party.addPerson(randos[randoIndex]);
+                System.out.println("NEW PERSON!");
+            }
+
+            if(Math.random() > 0.8) {
+                int randoIndex = (int)(Math.random()*party.getPartyCnt());
+                String name = party.getPerson(randoIndex);
+                party.removePerson(name);
+                System.out.println(name + " ABANDONED US!");
             }
 
             daysOnTrail++;

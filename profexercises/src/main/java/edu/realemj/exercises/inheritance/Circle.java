@@ -2,6 +2,7 @@ package edu.realemj.exercises.inheritance;
 
 import edu.realemj.exercises.math.Matrix;
 import edu.realemj.exercises.math.Utility;
+import edu.realemj.exercises.exceptions.InvalidRadiusException;
 
 public class Circle extends Shape {
     private double radius = 1.0;
@@ -10,16 +11,18 @@ public class Circle extends Shape {
         // super();
     }
 
-    public Circle(double radius) {
+    public Circle(double radius) throws InvalidRadiusException {
         // super();
         setRadius(radius);
     }
 
-    public Circle(double radius, Matrix pos) {
+    public Circle(double radius, Matrix pos) throws InvalidRadiusException {
         this(radius, pos, false);
     }
 
-    public Circle(double radius, Matrix pos, boolean filled) {
+    public Circle(double radius, Matrix pos, boolean filled)
+        throws InvalidRadiusException {
+
         super(pos, filled);
         setRadius(radius);
     }
@@ -28,9 +31,13 @@ public class Circle extends Shape {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(double radius) throws InvalidRadiusException {
         if(radius >= 0.0) {
             this.radius = radius;
+        }
+        else {
+            throw new InvalidRadiusException(
+                    "Radius should not be negative: " + radius);
         }
     }
 
