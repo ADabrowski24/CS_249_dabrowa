@@ -1,4 +1,4 @@
-package edu.realemj.assign05;
+package edu.dabrowa.assign05;
 
 import edu.realemj.testing.GeneralTesting;
 import org.testng.Assert;
