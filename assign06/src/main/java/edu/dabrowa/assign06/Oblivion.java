@@ -1,4 +1,5 @@
-package edu.realemj.assign06;
+package edu.dabrowa.assign06;
+//import edu.dabrowa.assign04.GameBoard;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 
 import java.io.File;
