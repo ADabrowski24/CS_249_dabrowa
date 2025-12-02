@@ -2,17 +2,17 @@ package edu.realemj.exercises.inheritance;
 
 import edu.realemj.exercises.math.*;
 
-public class Shape {
+public abstract class Shape implements Drawable {
     private Matrix pos = Matrix.make2DPoint(0,0);
     protected boolean filled;
 
-    public Shape() {}
+    protected Shape() {}
 
-    public Shape(Matrix pos) {
+    protected Shape(Matrix pos) {
         setPos(pos);
     }
 
-    public Shape(Matrix pos, boolean filled) {
+    protected Shape(Matrix pos, boolean filled) {
         setPos(pos);
         setFilled(filled);
     }
@@ -40,9 +40,12 @@ public class Shape {
                 + ")";
     }
 
+    /*
     public double getArea() {
         return 0;
-    }
+    }*/
+
+    public abstract double getArea();
 
     @Override
     public boolean equals(Object other) {

@@ -66,6 +66,27 @@ public class Matrix {
         });
     }
 
+    public static Matrix make3DScale(double sx, double sy, double sz) {
+        return new Matrix(new double [][] {
+                {sx, 0, 0, 0},
+                {0, sy, 0, 0},
+                {0, 0, sz, 0},
+                {0, 0, 0, 1}
+        });
+    }
+
+    public static Matrix make3DRotateZ(double degrees) {
+        double radians = Math.toRadians(degrees);
+        double cosv = Math.cos(radians);
+        double sinv = Math.sin(radians);
+        return new Matrix(new double [][] {
+                {cosv, -sinv, 0, 0},
+                {sinv, cosv, 0, 0},
+                {0, 0, 1, 0},
+                {0, 0, 0, 1}
+        });
+    }
+
     public Matrix multiply(Matrix other) {
         // TODO: Error check that this.getColCnt() == other.getRownCnt()
         Matrix result = new Matrix(this.getRowCnt(), other.getColCnt());

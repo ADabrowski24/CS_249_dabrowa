@@ -4,7 +4,7 @@ import edu.realemj.exercises.math.Matrix;
 import edu.realemj.exercises.math.Utility;
 import edu.realemj.exercises.exceptions.InvalidRadiusException;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
     private double radius = 1.0;
 
     public Circle() {
@@ -25,6 +25,10 @@ public class Circle extends Shape {
 
         super(pos, filled);
         setRadius(radius);
+    }
+
+    public void draw() {
+        System.out.println("c i r c l e");
     }
 
     public double getRadius() {

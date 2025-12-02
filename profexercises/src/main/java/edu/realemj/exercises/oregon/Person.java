@@ -1,6 +1,6 @@
 package edu.realemj.exercises.oregon;
 
-public class Person {
+public class Person implements Comparable<Person> {
     private String name;
     private boolean alive = true;
 
@@ -45,4 +45,7 @@ public class Person {
         return isSame;
     }
 
+    public int compareTo(Person pother) {
+        return this.name.compareTo(pother.name);
+    }
 }

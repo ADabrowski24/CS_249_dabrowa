@@ -46,4 +46,8 @@ public class Square extends Shape {
 
         return isEqual;
     }
+
+    public void draw() {
+        System.out.println("Hip to be square");
+    }
 }

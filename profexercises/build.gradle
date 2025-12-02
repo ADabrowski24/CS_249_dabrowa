@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises.inheritance.SuperShapeLand"
+    mainClass = "edu.realemj.exercises.design.strategy.BearSimulator2025"
     mainModule = "profexercisesmod"
 }
 
