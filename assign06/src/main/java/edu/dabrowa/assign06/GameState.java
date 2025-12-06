@@ -31,12 +31,6 @@ public class GameState implements Loadable{
         String typeName="";
         Loadable m;
         int numLines=input.nextInt();
-        /*while (input.hasNextLine()) {
-            input.nextLine();
-            numLines++;
-        }
-        */
-        //while(input.hasNextLine()){
         for(int i=0;i<numLines;i++){
             typeName=input.next();
             m = createLoadable(typeName);
@@ -44,7 +38,6 @@ public class GameState implements Loadable{
             things.add(m);
             if(things.get(i) instanceof Creature c)
                 c.draw(map);
-            //numLines++;
         }
     }
 
